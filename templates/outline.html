@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HeartCure</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='normalize.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='custom.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='heart1.jpg') }}">
+    
+    
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="custom.css">
+</head>
+<body>
+    <section class="hero_image">
+        <div class="hero_wrapper">
+            <h1>HEARTCURE</h1>
+            <p>Know if you are prone to heart disease or not</p>
+            <form class='form_code'action="/predict" method="GET">
+                <button type="submit">Check</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
